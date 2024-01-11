@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+    cout << "Not Ortalaması Hesaplama Uygulamasına Hoş Geldiniz" << endl;
+    int not1;
+    int not2;
+    int ortalama;
+    
+    cout << "Birinci Notunuzu Giriniz:";
+
+    cin >> not1;
+    cout << "İkinci Notunuzu Giriniz:" ;
+    cin >> not2;
+    ortalama = (not1 + not2) / 2;
+    
+    cout << "Not ortalamanız: ";
+    cout << ortalama << endl;
+    
+    if(ortalama >= 50){
+      cout << "Dersten geçtiniz" ;  
+    }
+    else if (ortalama <50){
+        cout << "Dersten kaldınız" ;  
+    }
+}
