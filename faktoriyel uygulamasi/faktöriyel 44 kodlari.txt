@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Faktöriyel Hesaplama Uygulamasına Hoş Geldiniz." << endl;
+    cout << "44! hesaplanıyor. Lütfen bekleyiniz..." << endl;
+    int sayi = 44;
+    double carpim = 1;
+    cout << "döngü başladı" << endl;
+    while(sayi>0){
+        cout << "Şu anki sayı: "+ to_string(sayi) << endl;
+        carpim = carpim*sayi;
+        cout << "Şu anki çarpım: "+ to_string(carpim) << endl;
+        cout << "-----------------------------------" << endl;
+        sayi--;
+    }
+    
+    cout << "döngü bitti" << endl;
+    string sonuc = to_string(carpim);
+    cout << "Sonuç: "+ sonuc.substr(0,sonuc.length()-7) << endl;
+}
