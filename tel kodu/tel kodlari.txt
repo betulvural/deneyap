@@ -1,0 +1,37 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+//Cep telefonu sınıfı oluşturulup bu sınıfa ait urun1 ve urun2 adında 2 tane nesne oluşturulacaktır. 
+//Bu ürünlerin markaları, modelleri, fiyatlarını  tanımlayıp ve bunları yazdıran fonksiyonun kodu, 
+//sözde kodu ve flow chart(akış diyagramı) çizilecektir. 
+//NOT1: Akış diyagramı draw.io uygulamasında yapılacak olup bu alana linki yazılacaktır.
+//NOT2: Problemin kodu GitHub'a eklenecek olup link bu alanda yazılacaktır
+//NOT3: Sözde kod bu alanda yazılacaktır.
+
+class Telefon {
+
+public:
+char marka[50];
+char model[50]; 
+int fiyat;
+
+};
+
+int main() {
+
+Telefon urun1; strcpy(urun1.marka, "Samsung"); strcpy(urun1.model, "s21"); urun1.fiyat = 20000;
+Telefon urun2; strcpy(urun2.marka, "iPhone"); strcpy(urun2.model, "14 Pro max"); urun2.fiyat = 40000;
+cout << "Telefon 1: " << urun1.marka << ", " << urun1.model << ", " << urun1.fiyat << " \n";
+
+cout << "Telofon 2: " << urun2.marka << ", " << urun2.model << ", " << urun2.fiyat << " \n";
+
+}
